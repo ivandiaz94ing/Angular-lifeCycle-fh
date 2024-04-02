@@ -1,0 +1,13 @@
+<p>product works!</p>
+
+<products-price *ngIf="isProductVisible" [price]="currentPrice">
+</products-price>
+
+
+<button class="btn btn-primary m-5" (click)="isProductVisible=!isProductVisible">
+  Cambiar Valor
+</button>
+<span class="spacer"></span>
+<button class="btn btn-success" (click)="incrementPrice()">
+  +1
+</button>
